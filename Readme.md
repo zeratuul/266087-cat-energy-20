@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 - Студент: [Эммануил Ковшилов](https://up.htmlacademy.ru/adaptive/20/user/266087).
-- Наставник: [Дмитрий Иовлев](https://up.htmlacademy.ru/adaptive/20/user/200490).
+- Наставник: [Владимир Борисенко](https://up.htmlacademy.ru/adaptive/20/user/1310789).
 
 ---
 
