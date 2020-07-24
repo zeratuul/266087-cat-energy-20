@@ -1,2 +1,4 @@
-// Начните писать стили здесь
-body {background: red};
+@import "base.scss";
+@import "header.scss";
+@import "page-main.scss";
+@import "features.scss";
