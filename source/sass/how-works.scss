@@ -1,0 +1,13 @@
+.how-works {
+  &__head {
+    font-family: $oswald;
+    font-size: 36px;
+    line-height: 40px;
+    color: $black;
+  }
+
+  &__item--leaf {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-size: 60px 60px;
+  }
+}

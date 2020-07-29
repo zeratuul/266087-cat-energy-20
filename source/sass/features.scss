@@ -1,5 +1,42 @@
 .features {
+  &__btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 7px 44px;
+    margin-bottom: 22px;
+  }
   &__item {
-    background-color: $basic_grey;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-family: $oswald;
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+.features-item {
+  background-color: $basic_grey;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 33px;
+  &__title {
+    margin-bottom: 29px;
+    position: relative;
+    font-family: $oswald;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $black;
+    text-align: center;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+  }
+
+  &__description {
+    color: $dark_grey;
   }
 }
