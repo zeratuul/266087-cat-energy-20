@@ -5,6 +5,7 @@
     padding: 7px 44px;
     margin-bottom: 22px;
   }
+
   &__item {
     margin-bottom: 20px;
   }
@@ -15,11 +16,13 @@
     color: $black;
   }
 }
+
 .features-item {
   background-color: $basic_grey;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 33px;
+
   &__title {
     margin-bottom: 29px;
     position: relative;

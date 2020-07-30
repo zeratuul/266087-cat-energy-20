@@ -2,18 +2,19 @@
   background-color: $basic_grey;
   display: flex;
   flex-direction: column;
+
   &__logo {
-    display:flex;
+    display: flex;
     justify-content: center;
   }
 
   &__social {
-    display:flex;
+    display: flex;
     justify-content: space-around;
   }
 
   &__properties {
-    display:flex;
+    display: flex;
     justify-content: space-between;
   }
 }
