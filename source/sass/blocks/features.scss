@@ -11,26 +11,26 @@
   }
 
   &__link {
-    font-family: $oswald;
+    color: $h_a_color;
+    font-family: $font-oswald;
     text-transform: uppercase;
-    color: $black;
   }
 }
 
-.features-item {
-  background-color: $basic_grey;
+.feature {
+  background-color: $features_clr;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 33px;
 
   &__title {
-    margin-bottom: 29px;
     position: relative;
-    font-family: $oswald;
+    color: $h_a_color;
+    margin-bottom: 29px;
+    font-family: $font-oswald;
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
-    color: $black;
     text-align: center;
   }
 
@@ -40,6 +40,6 @@
   }
 
   &__description {
-    color: $dark_grey;
+    color: $text-color;
   }
 }

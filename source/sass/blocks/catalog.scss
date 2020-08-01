@@ -1,9 +1,9 @@
 .catalog {
   &__hero {
-    font-family: $oswald;
+    color: $h_a_color;
+    font-family: $font-oswald;
     font-size: 34px;
     line-height: 36px;
-    color: $black;
   }
 
   &__order {
@@ -18,18 +18,18 @@
   }
 
   &__product {
-    font-family: $oswald;
+    color: $dark_grey-2;
+    font-family: $font-oswald;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
     line-height: 20px;
-    color: $dark_grey-2;
   }
 
   &__row {
     font-size: 12px;
-    line-height: 16px;
     font-style: normal;
     font-weight: normal;
+    line-height: 16px;
   }
 }
