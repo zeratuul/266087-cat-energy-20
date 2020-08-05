@@ -1,11 +1,21 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: $features_clr;
+  background-color: $features-clr;
+
+  &__wrap {
+    background-color: $significant;
+    padding: 28px 0px 22px 19px ;
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #D9D9D9;
+  }
 
   &__logo {
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
   }
 
   &__social {
@@ -16,5 +26,9 @@
   &__properties {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__map {
+    margin-bottom: 39px;
   }
 }

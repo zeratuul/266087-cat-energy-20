@@ -1,6 +1,6 @@
 .catalog {
   &__hero {
-    color: $h_a_color;
+    color: $h-a-color;
     font-family: $font-oswald;
     font-size: 34px;
     line-height: 36px;
@@ -18,7 +18,7 @@
   }
 
   &__product {
-    color: $dark_grey-2;
+    color: $product-head;
     font-family: $font-oswald;
     font-size: 16px;
     font-style: normal;

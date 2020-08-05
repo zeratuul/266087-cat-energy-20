@@ -1,22 +1,23 @@
 $font-oswald: "Oswald", "Tahoma", sans-serif;
 
-$backgr_img: #68b738;
-$features_clr: #f2f2f2;
+$backgr-img: #68b738;
+$features-clr: #f2f2f2;
 $text-color: #444444;
-$product_head: #222222;
-$h_a_color: #000000;
-$status_eror: #ff8282;
-$button_hover: #5eaa2f;
+$product-head: #222222;
+$h-a-color: #000000;
+$status-eror: #ff8282;
+$button-hover: #5eaa2f;
 $significant: #ffffff;
+$social: #666666;
 
 body {
+  color: #444444;
+  background: $significant;
   font-family: "Arial", "PT Sans Narrow", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 18px;
-  color: #444444;
-  background: $significant;
 }
 
 .container {

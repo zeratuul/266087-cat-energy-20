@@ -11,21 +11,21 @@
   }
 
   &__link {
-    color: $h_a_color;
+    color: $h-a-color;
     font-family: $font-oswald;
     text-transform: uppercase;
   }
 }
 
 .feature {
-  background-color: $features_clr;
+  background-color: $features-clr;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 33px;
 
   &__title {
     position: relative;
-    color: $h_a_color;
+    color: $h-a-color;
     margin-bottom: 29px;
     font-family: $font-oswald;
     font-size: 24px;

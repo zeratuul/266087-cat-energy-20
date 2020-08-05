@@ -1,0 +1,11 @@
+.contact {
+  display: flex;
+  line-height: 20px;
+
+&__invite {
+  color: #111111;
+  font-family: $font-oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+}
