@@ -1,12 +1,12 @@
 .page-main {
   &__hero {
     position: relative;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 320px;
     padding: 32px 0 185px 0;
     margin: auto;
     margin-bottom: 132px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px;
   }
 
   &__slogan {
@@ -17,8 +17,8 @@
   }
 
   &__intro {
-    color: $significant;
     margin-top: 25px;
+    color: $significant;
     font-family: $font-oswald;
     font-size: 14px;
     font-style: normal;
@@ -30,9 +30,9 @@
 
   &__advert {
     position: absolute;
-    width: 280px;
-    height: 270px;
     left: 13px;
     top: 175px;
+    width: 280px;
+    height: 270px;
   }
 }

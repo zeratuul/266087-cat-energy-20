@@ -18,15 +18,15 @@
 }
 
 .feature {
-  background-color: $features-clr;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 33px;
+  background-color: $features-clr;
 
   &__title {
     position: relative;
-    color: $h-a-color;
     margin-bottom: 29px;
+    color: $h-a-color;
     font-family: $font-oswald;
     font-size: 24px;
     line-height: 37px;

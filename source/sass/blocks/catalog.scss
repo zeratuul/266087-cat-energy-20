@@ -6,6 +6,14 @@
     line-height: 36px;
   }
 
+  &__sect {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
   &__order {
     width: 100%;
     max-width: 300px;
@@ -15,6 +23,7 @@
 
   &__wrap {
     display: flex;
+    justify-content: center;
   }
 
   &__product {
