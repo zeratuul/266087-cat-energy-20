@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $features-clr;
+
+  &__wrap {
+    padding: 28px 0 22px 19px;
+    background-color: $significant;
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__properties {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__map {
+    margin-bottom: 39px;
+  }
+}

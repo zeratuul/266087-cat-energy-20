@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 39px 55px 23px 55px;
+
+  &__icon {
+    color: $social;
+  }
+}

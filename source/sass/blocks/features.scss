@@ -1,0 +1,45 @@
+.features {
+  &__btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 7px 44px;
+    margin-bottom: 22px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: $h-a-color;
+    font-family: $font-oswald;
+    text-transform: uppercase;
+  }
+}
+
+.feature {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 33px;
+  background-color: $features-clr;
+
+  &__title {
+    position: relative;
+    margin-bottom: 29px;
+    color: $h-a-color;
+    font-family: $font-oswald;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+  }
+
+  &__description {
+    color: $text-color;
+  }
+}

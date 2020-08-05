@@ -1,0 +1,44 @@
+.catalog {
+  &__hero {
+    color: $h-a-color;
+    font-family: $font-oswald;
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  &__sect {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__order {
+    width: 100%;
+    max-width: 300px;
+    padding: 7px 44px;
+    margin-bottom: 22px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__product {
+    color: $product-head;
+    font-family: $font-oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  &__row {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+  }
+}
