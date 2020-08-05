@@ -4,8 +4,8 @@
   background-color: $features-clr;
 
   &__wrap {
-    background-color: $significant;
     padding: 28px 0 22px 19px;
+    background-color: $significant;
   }
 
   &__item:not(:last-child) {
