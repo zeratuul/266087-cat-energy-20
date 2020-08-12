@@ -34,3 +34,13 @@ body {
   height: 1px;
   margin: -1px;
 }
+
+.btn--green {
+  background-color: $backgr-img;
+  color: $significant;
+}
+
+.btn--grey {
+  background-color: $features-clr;
+  color: $text-color;
+}

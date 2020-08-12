@@ -1,12 +1,11 @@
 .button {
   display: inline-block;
-  background-color: $backgr-img;
-  color: $significant;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   text-align: center;
+  text-transform: uppercase;
   vertical-align: middle;
   line-height: 18px;
 }

@@ -1,0 +1,14 @@
+.additional {
+  &__btn {
+    width: 100%;
+    padding: 7px 44px;
+  }
+
+  &__giftb {
+    position: relative;
+    padding: 145px 0 150px 0;
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px;
+  }
+}

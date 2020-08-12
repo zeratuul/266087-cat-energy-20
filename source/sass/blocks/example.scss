@@ -1,0 +1,30 @@
+.example {
+  &__head {
+    color: $h-a-color;
+    font-family: $font-oswald;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__result {
+    display: block;
+    text-align: center;
+  }
+
+  &__numb {
+    font-family: $font-oswald;
+    font-size: 24px;
+    line-height: 24px;
+    color: $h-a-color;
+  }
+
+  &__desc {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
