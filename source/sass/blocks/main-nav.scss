@@ -10,20 +10,20 @@
   }
 
   &__toggle {
-    display: block;
     position: relative;
+    display: block;
     width: 24px;
     height: 20px;
   }
 
   &__toggle::before,
   &__toggle::after {
-    content: "";
-    background-color: $h-a-color;
     position: absolute;
-    width: 100%;
-    height: 1.5px;
     right: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $h-a-color;
   }
 
   &__toggle::before {
@@ -35,20 +35,20 @@
   }
 
   &__span {
-    content: "";
-    background-color: $h-a-color;
     position: absolute;
-    width: 100%;
-    height: 1.5px;
-    right: 0;
     top: 10px;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $h-a-color;
   }
 
   &__menu {
     display: none;
   }
 
-  &__active {
+  &--active {
     #{$block}__menu {
       display: block;
     }
