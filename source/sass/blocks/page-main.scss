@@ -1,8 +1,13 @@
 .page-main {
   &__hero {
+    background-color: $backgr-img;
+  }
+
+  &__wrap {
     position: relative;
-    padding: 32px 0 185px 0;
-    margin: auto;
+    padding: 32px 0 164px 0;
+    width: 320px;
+    margin: 0 auto;
     margin-bottom: 132px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;

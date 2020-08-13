@@ -18,9 +18,9 @@
 
   &__toggle::before,
   &__toggle::after {
+    content: "";
     position: absolute;
     right: 0;
-    content: "";
     width: 100%;
     height: 1px;
     background-color: $h-a-color;
