@@ -10,7 +10,11 @@ $button-hover: #5eaa2f;
 $significant: #ffffff;
 $social: #666666;
 
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 body {
+  min-width: 320px;
   color: #444444;
   background: $significant;
   font-family: "Arial", "PT Sans Narrow", sans-serif;
@@ -18,13 +22,6 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 18px;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  padding: 0 20px;
 }
 
 .visually-hidden {

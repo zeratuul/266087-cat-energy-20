@@ -1,9 +1,14 @@
 .features {
+  &__wrap {
+    text-align: center;
+  }
+
   &__btn {
     width: 100%;
     max-width: 300px;
     padding: 7px 44px;
     margin-bottom: 22px;
+    background-color: $backgr-img;
   }
 
   &__item {

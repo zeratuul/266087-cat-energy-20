@@ -10,23 +10,24 @@
 
 <body>
   <header class="header">
-    <a href="index.html" class="header__logo"><img src="img/logo-mobile.svg" width="200" height="38"
-        alt="Логотип сайта"></a>
-    <nav class="main-nav header__unit">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav container js-menu">
       <div class="main-nav__wrapper">
+        <div class="main-nav__logo"><img src="img/logo-mobile.svg" width="200" height="38" alt="Логотип сайта"></div>
+        <div class="main-nav__toggle js-menu-toggle"><span class=" main-nav__span"></span></div>
+      </div>
+      <div class="main-nav__menu">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a>
           </li>
-          <li class="main-nav__item"><a href="#">Каталог продукции</a>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог продукции</a>
           </li>
-          <li class="main-nav__item"><a href="#">Подбор программы</a>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="catalog">
+  <main class="catalog container">
     <h2 class="catalog__hero">Каталог продукции</h2>
     <section class="catalog__sect">
       <ul class="catalog__list">
@@ -202,9 +203,52 @@
         <li class="catalog__item catalog-item">
           <h3 class="catalog-item__show">Показать еще 100500 товаров</h3>
           <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
-          <a class="button" href="#">показать все</a>
+          <a class="catalog__show button" href="#">показать все</a>
         </li>
       </ul>
+    </section>
+    <section class="additional">
+      <div class="additional__headwrap">
+        <h3 class="additional__head">Дополнительные товары</h3>
+      </div>
+      <ul class="additional__list">
+        <li class="additional__item card">
+          <p class="card__heading">Сахарозаменитель</p>
+          <div class="card__content">
+            <p class="card__name">1 упаковка (100 г)</p>
+            <p class="card__price">200 Р</p>
+          </div>
+          <a href="#" class="card__btn button">заказать</a>
+        </li>
+        <li class="additional__item card">
+          <p class="card__heading">питьевая вода</p>
+          <div class="card__content">
+            <p class="card__name">5 литров</p>
+            <p class="card__price">50 Р</p>
+          </div>
+          <a href="#" class="card__btn button">заказать</a>
+        </li>
+        <li class="additional__item card">
+          <p class="card__heading">молоко</p>
+          <div class="card__content">
+            <p class="card__name">1 литр</p>
+            <p class="card__price">100 Р</p>
+          </div>
+          <a href="#" class="card__btn button ">заказать</a>
+        </li>
+        <li class="additional__item card">
+          <p class="card__heading">витамины</p>
+          <div class="card__content">
+            <p class="card__name">1 упаковка (30 г)</p>
+            <p class="card__price">300 Р</p>
+          </div>
+          <a href="#" class="card__btn button">заказать</a>
+        </li>
+      </ul>
+      <div class="additional__giftb">
+        <span class="additional__giftimg"></span>
+        <p class="additional__description">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -255,6 +299,7 @@
       </li>
     </ul>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

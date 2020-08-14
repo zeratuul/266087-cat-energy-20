@@ -19,6 +19,8 @@
     max-width: 300px;
     padding: 7px 44px;
     margin-bottom: 22px;
+    background-color: $backgr-img;
+    color: $significant;
   }
 
   &__wrap {
@@ -40,5 +42,13 @@
     font-style: normal;
     font-weight: normal;
     line-height: 16px;
+  }
+
+  &__show {
+    padding: 20px 94px;
+    background-color: $features-clr;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 0;
   }
 }
