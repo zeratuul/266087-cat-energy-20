@@ -1,12 +1,30 @@
 .example {
+  background-color: #eaeaea;
+
+  &__cover {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-top: 27px;
+  }
+
   &__head {
+    margin-bottom: 33px;
     color: $h-a-color;
     font-family: $font-oswald;
     font-size: 36px;
     line-height: 40px;
   }
 
-  &__wrap {
+  &__description {
+    margin-bottom: 25px;
+  }
+
+  // &__wrap {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  &__subwrap {
     display: flex;
     justify-content: space-between;
   }
@@ -26,5 +44,19 @@
   &__desc {
     font-size: 12px;
     line-height: 12px;
+  }
+
+  &__expenses {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $font-oswald;
+    text-transform: uppercase;
+    text-align: center;
+    color: $h-a-color;
+  }
+
+  &__transform {
+    text-align: center;
   }
 }

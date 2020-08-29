@@ -1,4 +1,7 @@
 .catalog {
+  max-width: 320px;
+  margin: 0 auto;
+
   &__hero {
     color: $h-a-color;
     font-family: $font-oswald;
@@ -10,7 +13,14 @@
     border-bottom: 1px solid #ebebeb;
   }
 
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &__item {
+    min-width: 280px;
     text-align: center;
   }
 
@@ -25,7 +35,16 @@
 
   &__wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+
+  &__link {
+    display: block;
+    width: 68px;
+    height: 86px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 68px 86px;
   }
 
   &__product {
@@ -35,6 +54,10 @@
     font-style: normal;
     font-weight: normal;
     line-height: 20px;
+  }
+
+  &__table {
+    text-align: left;
   }
 
   &__row {
@@ -50,5 +73,17 @@
     color: $text-color;
     font-size: 16px;
     line-height: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    max-width: 1220px;
   }
 }

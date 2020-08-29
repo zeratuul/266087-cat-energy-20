@@ -1,0 +1,24 @@
+.achievements {
+  position: relative;
+  width: 124px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &__numb {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $font-oswald;
+    color: $h-a-color;
+  }
+
+  &__desc {
+    position: absolute;
+    left: 18px;
+    top: 60px;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #eaeaea;
+  }
+}

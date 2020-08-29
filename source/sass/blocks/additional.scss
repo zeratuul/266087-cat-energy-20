@@ -7,3 +7,31 @@
     background-size: 320px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .additional {
+    &__giftb {
+      background-image: url("../../img/gift-photo-tablet@1x.jpg");
+      background-size: 708px 200px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__list {
+      max-width: 896px;
+      width: 100%;
+    }
+
+    &__giftb {
+      background-image: url("../../img/gift-photo-desktop@1x.jpg");
+      background-size: 708px 200px;
+    }
+  }
+}

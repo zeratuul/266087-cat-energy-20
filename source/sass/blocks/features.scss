@@ -1,16 +1,4 @@
 .features {
-  &__wrap {
-    text-align: center;
-  }
-
-  &__btn {
-    width: 100%;
-    max-width: 300px;
-    padding: 7px 44px;
-    margin-bottom: 22px;
-    background-color: $backgr-img;
-  }
-
   &__item {
     margin-bottom: 20px;
   }
@@ -22,29 +10,11 @@
   }
 }
 
-.feature {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 33px;
-  background-color: $features-clr;
-
-  &__title {
-    position: relative;
-    margin-bottom: 29px;
-    color: $h-a-color;
-    font-family: $font-oswald;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-  }
-
-  &__description {
-    color: $text-color;
+@media (min-width: $desktop-width) {
+  .features {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

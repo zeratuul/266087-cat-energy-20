@@ -6,3 +6,25 @@
     color: $significant;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .card {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    display: flex;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      min-width: 652px;
+      width: 100%;
+    }
+  }
+}
