@@ -9,3 +9,14 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contact {
+    justify-content: space-between;
+
+    &__item {
+      max-width: 171px;
+      width: 100%;
+    }
+  }
+}

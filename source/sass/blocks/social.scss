@@ -7,4 +7,26 @@
   &__icon {
     color: $social;
   }
+
+  &__vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &__instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__fb {
+    width: 10px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    max-width: 230px;
+    width: 100%;
+  }
 }

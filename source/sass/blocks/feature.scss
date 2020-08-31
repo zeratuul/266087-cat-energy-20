@@ -1,0 +1,148 @@
+.feature {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  padding: 30px 33px 22px 20px;
+  margin: 0 auto;
+  background-color: $features-clr;
+
+  &__face {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+  }
+
+  &__circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: $backgr-img;
+    border-radius: 50%;
+  }
+
+  &__slim,
+  &__pro {
+    position: absolute;
+  }
+
+  &__slim {
+    bottom: 3px;
+    left: 0;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__pro {
+    height: 50px;
+    width: 65px;
+    bottom: 3px;
+    right: -5px;
+  }
+
+  &__title {
+    margin-left: 10px;
+    margin-bottom: 29px;
+    color: $h-a-color;
+    font-family: $font-oswald;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    padding-bottom: 23px;
+    margin-bottom: 19px;
+    color: $text-color;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__link {
+    font-family: $font-oswald;
+    font-size: 16px;
+    line-height: 16px;
+    color: $h-a-color;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature {
+    max-width: 708px;
+
+    &__face {
+      position: absolute;
+      top: 24px;
+      left: 460px;
+    }
+
+    &__circle {
+      width: 200px;
+      height: 200px;
+    }
+
+    &__slim {
+      bottom: 15px;
+      left: 4px;
+      height: 188px;
+      width: 200px;
+    }
+
+    &__pro {
+      height: 200px;
+      width: 260px;
+      bottom: 3px;
+      right: -25px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__description {
+      max-width: 377px;
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature {
+    max-width: 570px;
+    padding-top: 77px;
+    margin: 0;
+
+    &__face {
+      position: absolute;
+      top: 45px;
+      left: 47px;
+    }
+
+    &__circle {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__slim {
+      bottom: 7px;
+      left: 0;
+      height: 95px;
+      width: 100px;
+    }
+
+    &__pro {
+      height: 100px;
+      width: 130px;
+      bottom: 0;
+      right: -13px;
+    }
+
+    &__description {
+      max-width: 467px;
+      padding-top: 39px;
+    }
+  }
+}

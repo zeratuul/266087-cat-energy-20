@@ -1,10 +1,13 @@
 .page-main {
   &__hero {
-    background-color: $backgr-img;
+    position: relative;
   }
 
   &__wrap {
-    position: relative;
+    background-color: $backgr-img;
+  }
+
+  &__filing {
     width: 320px;
     margin: 0 auto;
     margin-bottom: 132px;
@@ -35,9 +38,120 @@
 
   &__advert {
     position: absolute;
-    left: 13px;
+    left: 50%;
     top: 175px;
     width: 280px;
     height: 270px;
+    background-image: url("../../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 280px 270px;
+    transform: translateX(-50%);
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 7px 44px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $significant;
+    background-color: $backgr-img;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    &__hero {
+      padding-bottom: 290px;
+    }
+
+    &__wrap {
+      background-color: $significant;
+      padding-bottom: 57px;
+    }
+
+    &__filing {
+      width: 414px;
+      background-image: none;
+      margin-left: 117px;
+    }
+
+    &__slogan,
+    &__intro {
+      text-align: left;
+      color: $h-a-color;
+    }
+
+    &__slogan {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__intro {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__advert {
+      position: absolute;
+      top: 230px;
+      left: 370px;
+      width: 709px;
+      height: 609px;
+      background-image: url("../../img/index-can-tablet@1x.jpg");
+      background-size: 709px 609px;
+    }
+
+    &__wrapper {
+      position: absolute;
+      top: 260px;
+      left: 100px;
+      z-index: 10;
+    }
+
+    &__btn {
+      width: 100%;
+      max-width: 244px;
+      padding: 25px 26px;
+      font-size: 20px;
+      line-height: 0px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    &__hero {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__desk {
+      width: 720px;
+      height: 696px;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+    }
+
+    &__filing {
+      margin-top: 223px;
+      margin-left: 80px;
+    }
+
+    &__advert {
+      top: 170px;
+      left: 910px;
+      background-image: url("../../img/index-can-desktop@1x.png");
+      background-size: 552px 499px;
+    }
+
+    &__wrapper {
+      top: 450px;
+      left: 200px;
+    }
   }
 }

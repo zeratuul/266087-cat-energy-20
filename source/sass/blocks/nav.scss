@@ -1,4 +1,4 @@
-.main-nav {
+.nav {
   $block: &;
   padding-top: 8px;
   padding-bottom: 9px;
@@ -81,10 +81,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 
     &__toggle {
       display: none;
@@ -112,14 +113,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    position: absolute;
-    top: 51px;
-    left: 50%;
-    z-index: 15;
+  .nav {
     padding-left: 110px;
     padding-right: 80px;
-    transform: translateX(-50%);
 
     &__img {
       height: 57px;
@@ -130,10 +126,6 @@
       padding-left: 530px;
       font-size: 20px;
       line-height: 30px;
-    }
-
-    &__link {
-      color: $significant;
     }
   }
 }
