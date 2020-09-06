@@ -1,0 +1,36 @@
+.main {
+  padding-top: 27px;
+  font-family: $font-oswald;
+  border-top: 1px solid #d9d9d9;
+
+  &__hero {
+    margin-bottom: 37px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    color: $h-a-color;
+  }
+
+  &__description {
+    margin-bottom: 39px;
+    text-transform: uppercase;
+    color: $h-a-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    &__hero {
+      margin-bottom: 54px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__description {
+      margin-left: 40px;
+      margin-bottom: 66px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

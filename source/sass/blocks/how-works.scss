@@ -100,6 +100,7 @@
 
     &__list {
       flex-direction: row;
+      flex-wrap: nowrap;
     }
 
     &__item {

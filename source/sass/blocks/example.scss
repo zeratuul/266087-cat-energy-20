@@ -2,8 +2,6 @@
   background-color: #eaeaea;
 
   &__cover {
-    max-width: 320px;
-    margin: 0 auto;
     padding-top: 27px;
   }
 
@@ -18,11 +16,6 @@
   &__description {
     margin-bottom: 25px;
   }
-
-  // &__wrap {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
 
   &__subwrap {
     display: flex;
@@ -41,11 +34,6 @@
     line-height: 24px;
   }
 
-  &__desc {
-    font-size: 12px;
-    line-height: 12px;
-  }
-
   &__expenses {
     margin-top: 24px;
     font-size: 14px;
@@ -58,5 +46,29 @@
 
   &__transform {
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    &__cover {
+      background-color: $significant;
+    }
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+
+    &__description,
+    &__wrap {
+      background-color: #eaeaea;
+    }
   }
 }

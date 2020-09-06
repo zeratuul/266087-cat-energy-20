@@ -1,0 +1,248 @@
+.form {
+  &__contactwrap {
+    padding-top: 20px;
+    padding-bottom: 9px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__iteminfo {
+    font-size: 16px;
+  }
+
+  &__radio {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-bottom: 13px;
+    vertical-align: middle;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &__radio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: $backgr-img;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  &__input:checked + &__radio::before {
+    opacity: 1;
+  }
+
+  &__ownerblock {
+    padding-top: 26px;
+  }
+
+  &__labelarea {
+    display: flex;
+    flex: auto;
+    margin-bottom: 14px;
+    font-size: 16px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__denomination {
+    flex: none;
+    margin-right: 12px;
+  }
+
+  &__email,
+  &__tel {
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    border: 1px solid #cdcdcd;
+  }
+
+  &__data {
+    position: relative;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 26px;
+    color: $h-a-color;
+  }
+
+  &__data::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 200px;
+    height: 2px;
+    width: 766px;
+    background-color: $backgr-img;
+  }
+
+  &__area {
+    padding-top: 10px;
+  }
+
+  &__comment {
+    position: relative;
+    margin-bottom: 37px;
+    font-size: 24px;
+    line-height: 26px;
+    color: $h-a-color;
+  }
+
+  &__comment::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 140px;
+    height: 2px;
+    width: 766px;
+    background-color: $backgr-img;
+  }
+
+  &__textarea {
+    resize: none;
+    max-width: 280px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: $text-color;
+    text-transform: uppercase;
+    border: 1px solid #e7e7e7;
+  }
+
+  &__checkwrap {
+    padding-top: 23px;
+  }
+
+  &__additional {
+    position: relative;
+    margin-bottom: 27px;
+    font-size: 24px;
+    line-height: 26px;
+    color: $h-a-color;
+  }
+
+  &__additional::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 160px;
+    height: 2px;
+    width: 766px;
+    background-color: $backgr-img;
+  }
+
+  &__btnwrap {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-bottom: 21px;
+    padding: 10px 78px;
+    font-size: 15px;
+    line-height: 20px;
+    color: $significant;
+    background-color: $backgr-img;
+    border-style: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    &__iteminfo {
+      margin-bottom: 72px;
+    }
+
+    &__labelarea,
+    &__textarea,
+    &__iteminfo {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__contactwrap {
+      padding-top: 0;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    &__subborder {
+      padding-top: 20px;
+      padding-bottom: 9px;
+      padding-left: 28px;
+      border: 1px solid #d9d9d9;
+    }
+
+    &__data,
+    &__comment,
+    &__additional {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__textarea {
+      max-width: 710px;
+      padding: 19px;
+      text-align: left;
+    }
+
+    &__checkwrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__checkpiece {
+      flex: calc(50% - 20px) 0 1;
+      margin-left: 20px;
+    }
+
+    &__btnwrap {
+      display: flex;
+    }
+
+    &__btn,
+    &__mandatory {
+      flex: calc(50% - 20px) 0 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    &__block {
+      display: flex;
+      padding: 0 110px;
+    }
+
+    &__iteminfo {
+      margin-bottom: 0;
+    }
+
+    &__iteminfo,
+    &__contactwrap {
+      flex-basis: calc(50% - 20px);
+    }
+
+    &__owner {
+      display: flex;
+    }
+
+    .form__textarea {
+      max-width: 1220px;
+    }
+
+    &__checkpiece {
+      flex: calc(25% - 20px) 0 1;
+      margin-left: 20px;
+    }
+  }
+}

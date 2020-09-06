@@ -1,4 +1,4 @@
-.container {
+.shell {
   max-width: 320px;
   width: 100%;
   margin: auto;
@@ -11,6 +11,5 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 0 110px;
   }
 }

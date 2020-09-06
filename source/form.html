@@ -28,59 +28,109 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="main__hero">Подбор программы</h1>
-    <p class="main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="main__space container">
+      <h1 class="main__hero">Подбор программы</h1>
+      <p class="main__description">Заполните анкету, и мы подберем программу <br> питания для вашего кота</p>
+    </div>
     <form class="main__form form" action="https://echo.htmlacademy.ru" method="POST" enctype="multipart/form-data">
-      <div class="form__iteminfo field">
-        <p class="field__label">ИМЯ:*</p>
-        <input class="field__input" name="username" type="text" placeholder="барсик">
-      </div>
-      <div class="form__iteminfo field">
-        <p class="field__label">Вес (кг):* </p>
-        <input class="field__input" name="userweight" type="number" placeholder="7">
-      </div>
-      <div class="form__iteminfo field">
-        <p class="field__label">Возраст (лет): </p>
-        <input class="field__input" name="userage" type="number" placeholder="7">
-      </div>
-      </ul>
-      <div class="form__cont">
-        <input class="form__radio" checked type="radio" name="desired" value="slim">похудение
-      </div>
-      <div class="form__cont">
-        <input class="form__radio" type="radio" name="desired" value="mass">Набор массы
-      </div>
-      <div class="form__cont">
-        <input class="form__radio" type="radio" name="desired" value="ignorance">Не знаю (Нужен ваш совет)
-      </div>
-      <p class="form__data">Контактные данные (владельца кота)</p>
-      <div class="form__owner">
-        <p class="denomination">Email:*</p>
-        <input class="form__email" type="email" placeholder="kuklachev@gmail.com">
-      </div>
-      <div class="form__owner">
-        <p class="denomination">Phone</p>
-        <input class="form__tel" type="tel" placeholder="8 (960) 900-60-90">
-      </div>
-      <p class="form__comment">Комментарий</p>
-      <textarea name="text" placeholder="Расскажите обо всех повАдках кота" cols="30" rows="8"></textarea>
-      <p class="form__additional">Дополнительно</p>
-      <div class="form__checkwrap">
-        <div>
-          <input class="form__checkbox" checked type="checkbox" name="sweetener" value="yes">сахарозаменитель
+      <div class="form__block">
+        <div class="form__iteminfo field shell">
+          <label class="field__label" aria-label="ИМЯ">
+            <p class="field__labelname">ИМЯ:*</p>
+            <input class="field__input" name="username" type="text" placeholder="барсик">
+          </label>
+          <label class="field__label" aria-label="Вес">
+            <p class="field__labelname">Вес (кг):* </p>
+            <input class="field__input" name="userweight" type="number" placeholder="7">
+          </label>
+          <label class="field__label" aria-label="Возраст">
+            <p class="field__labelname">Возраст (лет): </p>
+            <input class="field__input" name="userage" type="number" placeholder="7">
+          </label>
         </div>
-        <div>
-          <input class="form__checkbox" type="checkbox" name="water" value="yes">питьевая вода
-        </div>
-        <div>
-          <input class="form__checkbox" type="checkbox" name="milk" value="yes">молоко
-        </div>
-        <div>
-          <input class="form__checkbox" type="checkbox" name="vitamine" value="yes">витамины
+        <div class="form__contactwrap ">
+          <div class="form__border shell">
+            <div class="form__subborder">
+              <div class="form__cont">
+                <label class="form__label" aria-label="Похудение">
+                  <input class="form__input visually-hidden" checked type="radio" name="desired" value="slim">
+                  <span class="form__radio"></span>
+                  похудение
+                </label>
+              </div>
+              <div class="form__cont">
+                <label class="form__label" aria-label="Набор массы">
+                  <input class="form__input visually-hidden" type="radio" name="desired" value="mass">
+                  <span class="form__radio"></span>
+                  Набор массы
+                </label>
+              </div>
+              <div class="form__cont">
+                <label class="form__label" aria-label="Не знаю">
+                  <input class="form__input visually-hidden" type="radio" name="desired" value="ignorance">
+                  <span class="form__radio"></span>
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="button" type="submit">отправить заявку</button>
-      <p class="form__mandatory">* — Обязательные поля</p>
+      <div class="form__ownerblock container">
+        <p class="form__data">Контактные данные (владельца кота)</p>
+        <div class="form__owner">
+          <label class="form__labelarea" aria-label="Почта">
+            <p class="form__denomination">Email:*</p>
+            <input class="form__email" type="email" placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="form__labelarea" aria-label="Телефон">
+            <p class="form__denomination">Телефон:*</p>
+            <input class="form__tel" type="tel" placeholder="8 (960) 900-60-90">
+          </label>
+        </div>
+      </div>
+      <div class="form__area container">
+        <p class="form__comment">Комментарий</p>
+        <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота" cols="30"
+          rows="8"></textarea>
+      </div>
+      <div class="form__boxwrapp container">
+        <p class="form__additional">Дополнительно</p>
+        <div class="form__checkwrap">
+          <div class="form__checkpiece">
+            <label class="checkbox" aria-label="сахарозаменитель">
+              <input class="checkbox__checkinput visually-hidden" checked type="checkbox" name="sweetener" value="yes">
+              <span class="checkbox__checkbutton"></span>
+              <span class="checkbox__position">сахарозаменитель</span>
+            </label>
+          </div>
+          <div class="form__checkpiece">
+            <label class="checkbox" aria-label="питьевая вода">
+              <input class="checkbox__checkinput visually-hidden" type="checkbox" name="water" value="yes">
+              <span class="checkbox__checkbutton"></span>
+              <span class="checkbox__position">питьевая вода</span>
+            </label>
+          </div>
+          <div class="form__checkpiece">
+            <label class="checkbox" aria-label="молоко">
+              <input class="checkbox__checkinput visually-hidden" type="checkbox" name="milk" value="yes">
+              <span class="checkbox__checkbutton"></span>
+              <span class="checkbox__position">молоко</span>
+            </label>
+          </div>
+          <div class="form__checkpiece">
+            <label class="checkbox" aria-label="витамины">
+              <input class="checkbox__checkinput visually-hidden" type="checkbox" name="vitamine" value="yes">
+              <span class="checkbox__checkbutton"></span>
+              <span class="checkbox__position">витамины</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form__btnwrap container">
+        <button class="form__btn button" type="submit">отправить заявку</button>
+        <p class="form__mandatory">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="footer">
@@ -94,7 +144,7 @@
     </div>
     <div class="footer__map"></div>
     <div class="footer__colorwrap">
-      <ul class="footer__list">
+      <ul class="footer__list container">
         <li class="footer__item "><a class="footer__logo" href="#"><svg class="footer__logosvg">
               <use xlink:href="img/sprite.svg#footer__logotype"></use>
             </svg></a></li>

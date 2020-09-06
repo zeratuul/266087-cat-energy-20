@@ -22,3 +22,11 @@
     background-color: #eaeaea;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    &__desc {
+      background-color: $significant;
+    }
+  }
+}
